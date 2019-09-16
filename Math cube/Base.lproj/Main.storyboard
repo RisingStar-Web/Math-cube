@@ -33,9 +33,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="N23-5m-VZk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JhI-PE-2OP"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="DR5-R5-so0">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="DR5-R5-so0">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,7 +50,7 @@
                                     <subviews>
                                         <button opaque="NO" clipsSubviews="YES" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9t-gJ-bHM">
                                             <rect key="frame" x="20" y="11" width="374" height="43"/>
-                                            <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="0.60164276539999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43" id="1G6-Te-NXz"/>
                                             </constraints>
@@ -104,12 +104,12 @@
                                 <rect key="frame" x="0.0" y="-50" width="415" height="908"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-rV-n3g">
-                                <rect key="frame" x="175.5" y="55" width="64.5" height="27"/>
+                                <rect key="frame" x="10" y="16" width="78.5" height="57"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="2dT-xO-JiX"/>
+                                    <constraint firstAttribute="height" constant="57" id="N1g-Sb-C4L"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iq5-ke-rlj">
@@ -180,16 +180,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.096414346989999997" green="0.1095839898" blue="0.33616946780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0UN-rV-n3g" firstAttribute="top" secondItem="iq5-ke-rlj" secondAttribute="bottom" constant="16" id="6nh-84-HbJ"/>
                             <constraint firstAttribute="bottom" secondItem="mS4-Ih-Y6S" secondAttribute="bottom" constant="-50" id="83D-Op-cjQ"/>
                             <constraint firstAttribute="centerY" secondItem="w87-H9-3V3" secondAttribute="centerY" id="8Sj-Pb-1YI"/>
                             <constraint firstItem="J5d-FX-xAZ" firstAttribute="top" secondItem="iq5-ke-rlj" secondAttribute="bottom" id="8x6-LA-uJH"/>
                             <constraint firstItem="bl2-yT-Ivt" firstAttribute="top" secondItem="gp2-u8-zpS" secondAttribute="top" id="FRa-ha-5TR"/>
                             <constraint firstItem="bl2-yT-Ivt" firstAttribute="leading" secondItem="J5d-FX-xAZ" secondAttribute="leading" id="H5H-qx-KqV"/>
-                            <constraint firstItem="0UN-rV-n3g" firstAttribute="top" secondItem="eWz-ej-KFk" secondAttribute="bottom" constant="-13" id="H68-wI-hSV"/>
                             <constraint firstItem="eWz-ej-KFk" firstAttribute="leading" secondItem="J5d-FX-xAZ" secondAttribute="leading" id="HO2-77-cxP"/>
                             <constraint firstItem="eWz-ej-KFk" firstAttribute="top" secondItem="iq5-ke-rlj" secondAttribute="bottom" id="IgC-Cn-C6a"/>
                             <constraint firstItem="iq5-ke-rlj" firstAttribute="top" secondItem="gp2-u8-zpS" secondAttribute="top" id="LXN-bk-9ip"/>
-                            <constraint firstItem="0UN-rV-n3g" firstAttribute="centerX" secondItem="bl2-yT-Ivt" secondAttribute="centerX" id="Qia-kN-gTT"/>
+                            <constraint firstItem="0UN-rV-n3g" firstAttribute="leading" secondItem="J5d-FX-xAZ" secondAttribute="leading" constant="10" id="RjW-mT-vt4"/>
                             <constraint firstItem="iq5-ke-rlj" firstAttribute="leading" secondItem="J5d-FX-xAZ" secondAttribute="leading" id="ThA-XV-7QF"/>
                             <constraint firstItem="mS4-Ih-Y6S" firstAttribute="centerX" secondItem="bl2-yT-Ivt" secondAttribute="centerX" id="aER-ku-rMv"/>
                             <constraint firstItem="J5d-FX-xAZ" firstAttribute="trailing" secondItem="iq5-ke-rlj" secondAttribute="trailing" id="bMi-PR-4zk"/>
@@ -226,9 +226,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_phone" translatesAutoresizingMaskIntoConstraints="NO" id="uKu-G7-QGc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-bL-lHc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-bL-lHc">
                                 <rect key="frame" x="20" y="123" width="374" height="651"/>
-                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="0.76808647260273977" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.60934824486301364" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <string key="text">Математические кубы - это математическое приложение, подобное тетрису.
 Активное поле 6x9 заполнено одиночными кубиками с номерами от 1 до 9.
 Ваша задача - освободить поле от кубиков, которые исчезают, если сумма кубиков, стоящих рядом, равна или кратна 10
@@ -250,6 +250,7 @@
 Квадрат 3х3 - кубики исчезают, если их сума в любом квадрате 3х3 равна 10.
 
 Скорость падения кубиков постоянно увеличивается. </string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -260,9 +261,9 @@
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Математические кубы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DtY-dO-92L">
                                 <rect key="frame" x="16" y="44" width="382" height="42"/>
-                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="0.76808647259999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -272,12 +273,12 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила Игры" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYe-Rf-RuG">
                                 <rect key="frame" x="142" y="94" width="130" height="21"/>
-                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="1" alpha="0.76808647259999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="jUr-D8-FGf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.14433013756816804" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -311,7 +312,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back_phone" width="2545" height="3264"/>
+        <image name="back_phone" width="1089" height="1929"/>
         <image name="fon_phone5" width="320" height="569"/>
         <image name="pause" width="512" height="512"/>
         <image name="play" width="512" height="512"/>

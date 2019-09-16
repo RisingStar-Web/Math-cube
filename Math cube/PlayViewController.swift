@@ -53,8 +53,8 @@ class CalculateController: UIViewController {
 
         gameOverView.layer.masksToBounds = true
         gameOverView.layer.cornerRadius = 16
-        gameOverView.layer.borderColor = UIColor.black.cgColor
-        gameOverView.backgroundColor = UIColor(red: 0.2156, green: 0.13725, blue: 0.44706, alpha: 0.7)
+        gameOverView.layer.borderColor = UIColor.blue.cgColor;
+        gameOverView.backgroundColor = UIColor(red: 0.2156, green: 0.13725, blue: 0.44706, alpha: 0.1)
         self.gameOverView.alpha = 0;
         
         levelLabel.text = NSString(format:"%@: %d", localized("Level"), level) as String
